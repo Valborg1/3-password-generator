@@ -30,7 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+.form {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -42,12 +42,21 @@ header {
   padding: 30px 40px;
 }
 
+.card-header, .card-footer {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+}
+
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+
+#inlineCheckbox1, #inlineCheckbox2, #inlineCheckbox3, #inlineCheckbox4 {
+  margin-left: 30px;
 }
 
 .card-body {
@@ -117,6 +126,52 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
+.form-check-inline {
+  max-width: 200px;
+  margin: 0;
+}
+
+
+.rangeslider {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.myslider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.myslider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.myslider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.myslider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
 
 @media (max-width: 690px) {
   .btn {
