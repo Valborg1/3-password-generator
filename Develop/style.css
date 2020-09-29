@@ -55,7 +55,7 @@ header {
   height: 2px;
 }
 
-#inlineCheckbox1, #inlineCheckbox2, #inlineCheckbox3, #inlineCheckbox4 {
+#uppercaseCheckbox, #lowercaseCheckbox, #numbersCheckbox, #symbolsCheckbox {
   margin-left: 30px;
 }
 
