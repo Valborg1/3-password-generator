@@ -54,12 +54,17 @@ function generatePassword(upper, lower, number, symbol) {
 
   const typesCount = upper + lower + number + symbol;
 
-  console.log(typesCount);
+  // console.log(typesCount);
 
-  const typesArr = [{upper}, {lower}, {number}, {symbol}].filter(item => Object.values(item)[0]);
+// console.log(Object.values({upper:"test"})[0]);
+
+
+  const typesArr = [{upper:upper}, {lower:lower}, {number:number}, {symbol:symbol}].filter(item => Object.values(item)[0]);
+
+// console.log(Object.values({upper})[0]);
 
   if (typesCount === 0) {
-    return "";
+    return "Please select one of the boxes above.";
   }
 
   for (var i = 0; i < length; i += typesCount) {
@@ -72,7 +77,7 @@ function generatePassword(upper, lower, number, symbol) {
   const finalPassword = generatedPassword.slice(0, length);
 
   return finalPassword;
-
+  
 }
 
 
