@@ -1,48 +1,18 @@
-# 03 JavaScript: Password Generator
+## Password Generator
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+I took a slightly differnt approach to this project. I felt that the user experience could be improved throught the use of a slider and checkboxes. In comparison to using alerts, this interface allows the user much more flexibily:
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+![Image of Updated Password Generator](https://raw.githubusercontent.com/Valborg1/3-password-generator/master/Assets/passwordgenerator.png)
 
-## User Story
+1. The user can visually see which password options (caps, numbers etc) have been selected.
+2. The user can update any password selection options without the need to reload the page and go through a series of alerts.
+3. The user can update the password length through the slider and see a character count to easily make changes to length without the need to reload the page and navigate a series of alerts.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+Please note that despite these minor changes, the password generator is still fully functional--that is to say, while all of the user specifications are recieved through the use of checkboxes rather than alerts, all results that could have been achieved through the use of alerts are also available in this updated model.
 
-## Acceptance Criteria
+Published Site:
+https://valborg1.github.io/3-password-generator/
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Github Repository:
+https://github.com/Valborg1/3-password-generator
 
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
