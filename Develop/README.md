@@ -9,3 +9,10 @@ I took a slightly differnt approach to this project. I felt that the user experi
 3. The user can update the password length through the slider and see a character count to easily make changes to length without the need to reload the page and navigate a series of alerts.
 
 Please note that despite these minor changes, the password generator is still fully functional--that is to say, while all of the user specifications are recieved through the use of checkboxes rather than alerts, all results that could have been achieved through the use of alerts are also available in this updated model.
+
+Published Site:
+https://valborg1.github.io/3-password-generator/
+
+Github Repository:
+https://github.com/Valborg1/3-password-generator
+
